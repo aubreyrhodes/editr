@@ -1,0 +1,24 @@
+.jumbotron {
+  text-align: center;
+  background-color: #bebec5;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  h1 {
+    font-size: 120px;
+    margin-bottom: 55px;
+    margin-top: 0px;
+  }
+  p {
+    font-size: 40px;
+  }
+  .sign-in {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+h3 i[class^="icon-"]{
+  margin-top: 7px;
+}

@@ -1,0 +1,24 @@
+/* line 1, main.css.scss */
+.jumbotron {
+  text-align: center;
+  background-color: #bebec5;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 25px; }
+  /* line 7, main.css.scss */
+  .jumbotron h1 {
+    font-size: 120px;
+    margin-bottom: 55px;
+    margin-top: 0px; }
+  /* line 12, main.css.scss */
+  .jumbotron p {
+    font-size: 40px; }
+  /* line 15, main.css.scss */
+  .jumbotron .sign-in {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+
+/* line 22, main.css.scss */
+h3 i[class^="icon-"] {
+  margin-top: 7px; }
