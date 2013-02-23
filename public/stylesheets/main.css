@@ -22,3 +22,7 @@
 /* line 22, main.css.scss */
 h3 i[class^="icon-"] {
   margin-top: 7px; }
+
+/* line 26, main.css.scss */
+.btn-block {
+  width: 100%; }
