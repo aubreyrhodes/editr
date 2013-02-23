@@ -5,6 +5,10 @@
   .sign-in
     a.btn.btn-primary data-toggle="modal" href="#sign-in" Sign In
 .container
+  - if alert.present?
+    .alert.alert-error=alert
+  - if notice.present?
+    .alert.alert-success=notice
   .row
     .span6
       h3
@@ -24,7 +28,7 @@
     button.close type="button" data-dismiss="modal" x
     h3 Sign In
   .modal-body
-    form.form-horizontal
+    form.form-horizontal action=sessions_path method="post"
       .control-group
         label.control-label for="email" Email
         .controls

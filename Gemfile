@@ -25,3 +25,5 @@ group :test do
   gem 'capybara-webkit'
   gem 'simplecov'
 end
+
+gem 'bcrypt-ruby', '~> 3.0.0'

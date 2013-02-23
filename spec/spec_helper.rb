@@ -1,5 +1,6 @@
 require 'simplecov'
 SimpleCov.start
+require 'zonebie'
 Zonebie.set_random_timezone
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
