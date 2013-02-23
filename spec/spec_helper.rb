@@ -50,6 +50,18 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.include RSpec::Rails::RequestExampleGroup, type: :request, example_group: {
+    file_path: /spec\/acceptance\/.*_spec/
+  }
+
+  config.include Capybara::DSL, example_group: {
+    file_path: /spec\/acceptance\/.*_spec/
+  }
+
+  config.include Capybara::RSpecMatchers, example_group: {
+    file_path: /spec\/acceptance\/.*_spec/
+  }
 end
 
 Capybara.javascript_driver = :webkit
