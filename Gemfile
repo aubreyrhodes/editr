@@ -17,6 +17,7 @@ group :test, :development do
   gem 'forgery'
   gem 'heroku'
   gem 'zonebie'
+  gem 'pry-rails'
 end
 group :test do
   gem 'capybara'
