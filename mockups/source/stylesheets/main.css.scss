@@ -26,11 +26,27 @@ h3 i[class^="icon-"]{
   width: 100%;
 }
 
-.controls input:focus:invalid,
-.controls textarea:focus:invalid,
-.controls select:focus:invalid {
-    border-color: #e74c3c;
-    color: #e74c3c;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; }
+input:focus:invalid,
+textarea:focus:invalid,
+select:focus:invalid {
+    border-color: #e74c3c !important;
+    color: #e74c3c !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+input[type="number"] {
+  padding: 0;
+}
+.navbar{
+  right: 0;
+  top: 0;
+  position: fixed;
+  .navbar-inner{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    .nav-stacked > li {
+      float: none;
+    }
+  }
+}

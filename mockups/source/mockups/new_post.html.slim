@@ -1,0 +1,58 @@
+.container-fluid
+  .row-fluid
+    .span9
+      h1 Create a New Post
+      form
+        label for="title" Title
+        input.input-block-level type="text" name="title" placeholder="Header displayed to editors"
+        label for="content" Content
+        textarea.input-block-level rows="10" name="content" placeholder="The text you want edited"
+        label for="notes" Notes
+        textarea.input-block-level rows="3" name="notes" placeholder="Extra information for the editor"
+        fieldset
+          legend Choose a Bounty
+          p This is the amount you will pay to have your content edited. The
+            higher the amount, the more quickly you will find an editor.
+            Bounties start at $5.
+          label for="bounty" Bounty
+          .input-append.input-prepend
+            span.add-on $
+            input.input-block-level type="number" name="bounty" min="5"
+            span.add-on .00
+        fieldset
+          legend User Information
+          .row-fluid
+            .span6
+              label for="email" Email
+              input.input-block-level type="email"
+            .span6
+              label for="password" Password
+              input.input-block-level type="password"
+        input.btn-block.btn.btn-large.btn-success type="submit" value="Submit"
+    .span3.navbar.navbar-inverse
+      .navbar-inner
+        ul.nav.nav-stacked
+          li
+            a href="index.html" Editr
+          li
+            a data-toggle="modal" href="#sign-in" Sign In
+
+#sign-in.modal.hide.fade
+  .modal-header
+    button.close type="button" data-dismiss="modal" x
+    h3 Sign In
+  .modal-body
+    form.form-horizontal
+      .control-group
+        label.control-label for="email" Email
+        .controls
+          input type="email" name="email" placeholder="Email"
+      .control-group
+        label.control-label for="password" Password
+        .controls
+          input type="password" name="password" placeholder="Password"
+      .control-group
+        .controls
+          button type="submit" class="btn" Sign In
+
+
