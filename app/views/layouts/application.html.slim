@@ -11,4 +11,8 @@ html lang="en"
     = javascript_include_tag "application"
 
   body
+    - if alert.present?
+      .alert.alert-error=alert
+    - if notice.present?
+      .alert.alert-success=notice
     = yield
