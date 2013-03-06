@@ -1,6 +1,5 @@
 .jumbotron {
   text-align: center;
-  background-color: #bebec5;
   margin-bottom: 60px;
   padding-top: 60px;
   padding-bottom: 25px;
@@ -26,3 +25,12 @@ h3 i[class^="icon-"]{
 .btn-block {
   width: 100%;
 }
+
+.controls input:focus:invalid,
+.controls textarea:focus:invalid,
+.controls select:focus:invalid {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }

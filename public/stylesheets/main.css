@@ -1,28 +1,37 @@
 /* line 1, main.css.scss */
 .jumbotron {
   text-align: center;
-  background-color: #bebec5;
   margin-bottom: 60px;
   padding-top: 60px;
   padding-bottom: 25px; }
-  /* line 7, main.css.scss */
+  /* line 6, main.css.scss */
   .jumbotron h1 {
     font-size: 120px;
     margin-bottom: 55px;
     margin-top: 0px; }
-  /* line 12, main.css.scss */
+  /* line 11, main.css.scss */
   .jumbotron p {
     font-size: 40px; }
-  /* line 15, main.css.scss */
+  /* line 14, main.css.scss */
   .jumbotron .sign-in {
     position: absolute;
     right: 10px;
     top: 10px; }
 
-/* line 22, main.css.scss */
+/* line 21, main.css.scss */
 h3 i[class^="icon-"] {
   margin-top: 7px; }
 
-/* line 26, main.css.scss */
+/* line 25, main.css.scss */
 .btn-block {
   width: 100%; }
+
+/* line 31, main.css.scss */
+.controls input:focus:invalid,
+.controls textarea:focus:invalid,
+.controls select:focus:invalid {
+  border-color: #e74c3c;
+  color: #e74c3c;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
