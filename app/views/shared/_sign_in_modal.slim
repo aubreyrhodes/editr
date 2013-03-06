@@ -1,0 +1,18 @@
+#sign-in.modal.hide.fade
+  .modal-header
+    button.close type="button" data-dismiss="modal" x
+    h3 Sign In
+  .modal-body
+    form.form-horizontal action=sessions_path method="post"
+      .control-group
+        label.control-label for="email" Email
+        .controls
+          input type="email" name="email" placeholder="Email"
+      .control-group
+        label.control-label for="password" Password
+        .controls
+          input type="password" name="password" placeholder="Password"
+      .control-group
+        .controls
+          button type="submit" class="btn" Sign In
+
