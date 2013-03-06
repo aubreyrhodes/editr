@@ -5,20 +5,16 @@
   .sign-in
     a.btn.btn-primary data-toggle="modal" href="#sign-in" Sign In
 .container
-  - if alert.present?
-    .alert.alert-error=alert
-  - if notice.present?
-    .alert.alert-success=notice
   .row
     .span6
       h3
-        i.icon-pencil
+        i.fui-new-24
         |  Authors
       p Add Posts, Set Bounties, Get Polished Content
-      a.btn.btn-large.btn-block.btn-primary href="#" Get Your Content Edited
+      a.btn.btn-large.btn-block.btn-info href="#" Get Your Content Edited
     .span6
       h3
-        i.icon-text-height
+        i.fui-eye-24
         |  Editors
       p Find Authors, Edit Posts, Get Paid
       a.btn.btn-large.btn-block.btn-success href="#" Make Money
@@ -28,7 +24,7 @@
     button.close type="button" data-dismiss="modal" x
     h3 Sign In
   .modal-body
-    form.form-horizontal action=sessions_path method="post"
+    form.form-horizontal
       .control-group
         label.control-label for="email" Email
         .controls
